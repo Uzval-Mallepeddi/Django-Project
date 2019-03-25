@@ -1,0 +1,27 @@
+<title>Projects | Portfolio</title>
+{% extends "myportfolio/base.html" %}
+{% load staticfiles %}
+
+{% block body_block %}
+    <link rel='stylesheet' href="{% static 'css/projects.css' %}">
+
+    <div class="project-container">
+        {% for project in projects %}
+        <a href="{{ project.github_location }}" target="_blank">
+            <div class="projects">
+                <img src="{{ project.image_location }}" width="290px" height="210px" class="project-image">
+                <div class="project-content">
+                    <h3>{{ project.project_title }}</h3>
+                    <p class="project-paragraph">{{ project.project_description }}</p>
+                </div>
+                <div class="middle">
+                    <div class="text">
+                        <span style="font-size: 24px; font-family:'Indie Flower', cursive;"><img src="https://github.com/Uzval-Mallepeddi/MyFiles/blob/master/github-icon.png?raw=true" width="25px">View on Github</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+
+{% endblock %}

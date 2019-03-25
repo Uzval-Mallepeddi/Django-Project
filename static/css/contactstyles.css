@@ -1,0 +1,95 @@
+        body {
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+
+        .contact-soon {
+            font-size: 32px;
+            font-family: 'Kaushan Script', cursive;
+            width: 100%;
+            text-align: center;
+        }
+
+        .contact-thanks {
+            font-size: 32px;
+            font-family: 'Kaushan Script', cursive;
+            width: 100%;
+            text-align: center;
+            margin-top: 10%;
+        }
+        .contactform {
+            z-index: 1111;
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        input[type=text] {
+            width: 33%;
+            height: 50px;
+            color: white;
+            margin: 0 8px 20px 14px;
+            padding-left: 10px;
+            border-style: none;
+            border-color: #5a5a58;
+            border-radius: 2px;
+            background-color: #2c2d2d;
+        }
+
+        input[type=number],
+        input[type=email] {
+            width: 33%;
+            color: white;
+            height: 50px;
+            margin: 0 8px 20px 14px;
+            padding-left: 10px;
+            border-style: none;
+            border-color: #5a5a58;
+            border-radius: 2px;
+            background-color: #2c2d2d;
+        }
+
+        textarea {
+            width: 68%;
+            color: white;
+            padding-left: 10px;
+            border-style: none;
+            border-radius: 2px;
+            border-color: #5a5a58;
+            margin: 0 8px 20px 20px;
+            background-color: #2c2d2d;
+        }
+
+        input[type=submit] {
+            font-size: 17px;
+            font-family: 'Kaushan Script', cursive;
+            margin: 0 10px 30px 14px;
+            border-style: none;
+            padding: 15px;
+            border-color: #5a5a58;
+            border-radius: 2px;
+            background-color: #2c2d2d;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: black;
+        }
+
+        @media screen and (max-width: 400px) {
+            .contact {
+                margin-top: 14%;
+                margin-bottom: 30%;
+            }
+            input[type=text],input[type=email], input[type=number] {
+                width: 80%;
+            }
+            input[type=text],input[type=email], input[type=number] {
+                width: 80%;
+            }
+            textarea {
+                width: 80%;
+            }
+        }
+

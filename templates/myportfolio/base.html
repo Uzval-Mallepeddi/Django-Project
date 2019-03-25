@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <title>Uzval Mallepeddi | Portfolio</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAguf/AAAAbABNsP8AAQAyAAABJwABACoACVneAAAAIgA+nvEAAAABAAAAGgAKLrIAAAASAA5f1gABAEQAHGzrAAAACgA/qP8AAAFSAAAAIwAAADwAZ87+AAVJugADPrgAABJlAAEwrgABACwAAABeAAAACwA2ivoAAAGFAAAAHAABABwANpzxAAAATgAAABQAedr+AAEAFAAAAC0AAABGADaR5wAAAAwAYcf7AAEAeAAAACUAIX33AAAABAAAADYAAQdUAH/j/gAAABUAE1bRAAAALgABGqwAAAANAAAAJgAAD1cAAgdEAAEYmQAAAFgAAAAeACBw4wAqgN8AAABQAAEBEwABAFAAAABpAAABRQABAEgAAAAOAAAABgAAAFEAAABqAAAAMAABMrUAAAAoAAABHQAAAFoAAAAHAAEAIAAACj4AAAAYAAADhAAgb+AAAQOEAAAAEAAAAHwAAAEFAAAACAAAADoAAAEWAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvR1lPLwoAAAAAAAAAAC8RViRbM0EqRwAAAAAAAEdGUlA4TEwIIA0RAAAAAC9GC0wEWhUVMBtQJlkAAAARUgUwDyMQDhkVJz1WLwAvVlAEDzwHOwweKVoFW1kARyQ4WiMaP1NVNiITNSEqAFlbTBVISxYfVwI0REo9KgBZM0wVQBIrVyxDVDFKICoAWEEUMEUuJQJJHBcVBlIRAAo3IBsVGAFOPEI+BAhBRwAAR0FQUQMyKA85CS1SHQoAAAARJj06NUpKBghSKi8AAAAAAFlWWyA9TVJBHS8AAAAAAAAAL1kdKioRRwAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" id="et-gf-satisfy-css" href="http://fonts.googleapis.com/css?family=Satisfy:400&amp;subset=latin" type="text/css" media="all">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="{% static "css/styles.css" %}"/>
+    <script type="text/javascript" src="{% static 'js/scripts.js' %}"></script>
+</head>
+
+<body onload="onload()">
+    <div class="header header-animate" id="hright">
+        <a href="{% url 'myportfolio:home' %}" class="name">U Z V A L - M A L L E P E D D I&ensp;<i class="em em-flag-in"></i></a>
+        <div class="header-right">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+            <a href="{% url 'myportfolio:skills' %}">My Skills</a>
+            <a href="{% url 'myportfolio:projects' %}">Projects</a>
+            <a href="{% url 'myportfolio:contact' %}">Contact Me</a>
+            <a href="{% url 'myportfolio:about' %}">About Me</a>
+        </div>
+    </div>
+
+    <div class="footer footer-animate">
+        <p>© 2019 All rights reserved | Designed by <i>"Uzval Mallepeddi</i>"</p>
+    </div>
+
+{% block body_block %}
+{% endblock %}
+
+</body>
+</html>

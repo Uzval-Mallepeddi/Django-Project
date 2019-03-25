@@ -1,0 +1,51 @@
+<title>About Me | Portfolio</title>
+{% extends "myportfolio/base.html" %}
+{% load staticfiles %}
+
+{% block body_block %}
+<link rel='stylesheet' href="{% static 'css/aboutstyles.css' %}">
+    <img src="https://raw.githubusercontent.com/Uzval-Mallepeddi/MyFiles/master/pic.jpg" width="840px" height="600px">
+
+<div class="content">
+
+    <div class="left-float">
+        <p><u>HOBBIES:</u></p>
+        <ul>
+            <li>Going on road trips</li>
+            <li>Photography</li>
+            <li>Video/Picture Editing</li>
+            <li>Playing cricket</li>
+            <li>Watching movies</li>
+        </ul>
+        <p><u>INTERESTS:</u></p>
+        <ul>
+            <li>Surfing about Time & Space</li>
+            <li>Watching videos of "WHAT IF's?"</li>
+            <li>Playing Snooker</li>
+            <li>Cooking</li>
+        </ul>
+        <p><u>PERSONAL CONTACT:</u></p>
+        <p>uzval007@gmail.com</p>
+        <p>+91 9849472696</p>
+    </div>
+
+    <div class="right-float">
+            <p><u>ABOUT ME</u></p>
+            <p>
+                Hello, my name is Uzval Mallepeddi and I'm an ex-Software Developer and i worked in Wipro Technologies Inc. for 20 months.
+                I love coding and designing.
+            </p>
+            <p>
+                I was born in India, but now i live in Ohio, United States. I love Hamburger (with extra cheese !) and key lime pie.
+                And i always believe that "One can love me, One can hate me. But, no one can never ignore me !"
+            </p>
+            <p>
+                I pursued my bachelors degree @ KL University where i discovered my passion for computers and
+                my penchant towards problem-solving and coding.
+                Currently, i am pursuing my masters degree in University of Cinccinati under Data Analytics.
+            </p>
+            <a class="button-shadow" href="{% url 'myportfolio:contact' %}">Let's talk</a>
+    </div>
+
+</div>
+{% endblock %}

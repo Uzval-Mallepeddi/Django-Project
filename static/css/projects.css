@@ -1,0 +1,84 @@
+        body {
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+        .project-container {
+            display: flex;
+            display: -webkit-flex;
+            flex-wrap: wrap;
+            padding: 10px;
+            -webkit-flex-wrap: wrap;
+            justify-content: center;
+            -webkit-justify-content: center;
+            margin-bottom: 90px;
+        }
+
+        .projects {
+            position: relative;
+            width: 290px;
+            height: 360px;
+            background-color: #fff;
+            border-radius: 4px;
+            margin: 10px;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        }
+
+        img {
+            max-width: 300px;
+            border-radius: 4px;
+        }
+
+        .project-content {
+            padding: 10px;
+        }
+
+        h3 {
+            font-family: 'Indie Flower', cursive;
+            text-align: center;
+            font-size: 25px;
+            margin: 0;
+        }
+        .project-paragraph {
+            margin: 5px;
+            text-align: justify;
+            font-size: 18px;
+            font-family: 'Marck Script', cursive;
+        }
+
+        .project-container a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .project-container a:hover .project-image {
+            opacity: 0.1;
+        }
+
+        .project-container a:hover .project-content {
+            opacity: 0.1;
+        }
+
+        .project-container a:hover .middle {
+            opacity: 1;
+            display: block;
+        }
+
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .text {
+            width: 180px;
+            padding: 7px 7px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 10px;
+        }

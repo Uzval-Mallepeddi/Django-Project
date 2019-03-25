@@ -1,0 +1,89 @@
+        body{
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+
+        img {
+            width: 60%;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 50px auto 20px auto;
+            border-radius: 6px;
+
+        }
+
+        .content{
+            font-family: "Varela Round";
+            margin: 0 auto;
+            text-align: left;
+            padding: 10px;
+            width: 850px
+        }
+
+        .left-float{
+            float: left;
+            margin-bottom: 10%;
+        }
+
+        .left-float li {
+            margin-bottom: 10px;
+        }
+
+        .left-float::after {
+            clear: both;
+            content: "";
+            display: table;
+        }
+
+        .right-float {
+            width: 50%;
+            float: right;
+            text-align: justify;
+            line-height: 30px;
+            margin-bottom: 200px;
+        }
+
+        .right-float p {
+            margin-bottom: 30px;
+        }
+        .right-float a {
+            text-decoration: none;
+            padding: 15px;
+            font-size: 14px;
+            background-color: #4CAF50;
+            border-style: none;
+            color: white;
+            border-radius: 2px;
+            transition-duration: 0s;
+
+        }
+        .button-shadow:hover {
+            cursor: pointer;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+
+        @media screen and (max-width: 882px) {
+            .content{
+                width: 100%;
+            }
+            .left-float{
+                float: none;
+                display: block;
+                margin-left: 40px;
+                width: 100%;
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+            .right-float{
+                float: none;
+                width: auto;
+                font-size: 17px;
+                margin: 0 50px 150px 30px;
+            }
+            img{
+                max-width: 100%;
+                display: block;
+                height: auto;
+            }
+        }

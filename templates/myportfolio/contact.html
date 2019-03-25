@@ -1,0 +1,21 @@
+<title>Contact Me | Portfolio</title>
+{% extends "myportfolio/base.html" %}
+{% load staticfiles %}
+{% block body_block %}
+    <link rel='stylesheet' href="{% static 'css/contactstyles.css' %}">
+<div class="contact">
+    <p class="contact-soon">Hello ! We'll connect soon</p>
+    {% if submitted %}
+    <p class="contact-thanks">Thanks for contacting..! <i class="em em-grinning" style="font-size:27px;"></i></p>
+    {% else %}
+    <div class="contactform">
+        <form method="POST">
+            {{ form }}
+            {% csrf_token %}
+            <br>
+            <input type="submit" value="Submit" class="submit">
+        </form>
+    </div>
+</div>
+{% endif %}
+{% endblock %}
